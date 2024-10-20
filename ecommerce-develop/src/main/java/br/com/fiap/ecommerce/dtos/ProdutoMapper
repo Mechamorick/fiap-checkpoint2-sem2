@@ -1,0 +1,482 @@
+package com.seuProjeto.mapper;
+
+import com.seuProjeto.dto.ProdutoDTO;
+import com.seuProjeto.model.Produto;
+
+public class ProdutoMapper {
+
+    
+
+   
+
+
+public ProdutoDTO toDto(Produto produto) {
+        
+        ProdutoDTO dto
+
+        ProdutoDTO
+
+        Produto
+
+       
+ProdutoDTO dto = new ProdutoDTO();
+        dto.setId(produto.getId());
+        dto.setNome(produto.getNome());
+        dto.setPreco(produto.getPreco());
+        
+        dto.setId(produto.getId());
+        dto.setNome(produto.getNome());
+        dto.setPreco(produto.getPreco());
+
+        dto.setId(produto.getId());
+        dto.setNome(produto.getNome());
+        dto.setPreco(produto.getPreco
+
+        dto.setId(produto.getId());
+        dto.setNome(produto.getNome());
+        dto.setPreco(produto.get
+
+        dto.setId(produto.getId());
+        dto.setNome(produto.getNome());
+        dto.setPreco(produto
+
+        dto.setId(produto.getId());
+        dto.setNome(produto.getNome());
+        dto.setPreco(prod
+
+        dto.setId(produto.getId());
+        dto.setNome(produto.getNome());
+        dto.setPreco
+
+        dto.setId(produto.getId());
+        dto.setNome(produto.getNome());
+        dto.set
+
+        dto.setId(produto.getId());
+        dto.setNome(produto.getNome());
+        dto
+
+        dto.setId(produto.getId());
+        dto.setNome(produto.getNome());
+       
+
+        dto.setId(produto.getId());
+        dto.setNome(produto.getNome());
+
+        dto.setId(produto.getId());
+        dto.setNome(produto.getNome
+
+        dto.setId(produto.getId());
+        dto.setNome(produto.get
+
+        dto.setId(produto.getId());
+        dto.setNome(produto
+
+        dto.setId(produto.getId());
+        dto.setNome(prod
+
+        dto.setId(produto.getId());
+        dto.setNome
+
+        dto.setId(produto.getId());
+        dto.set
+
+        dto.setId(produto.getId());
+        dto
+
+        dto.setId(produto.getId());
+       
+
+        dto.setId(produto.getId());
+
+        dto.setId(produto.getId
+
+        dto.setId(produto.get
+
+        dto.setId(produto
+
+        dto.setId
+
+        dto.set
+
+        dto
+
+       
+return dto;
+    }
+
+    
+    }
+
+   
+
+    }
+
+
+   
+public Produto toModel(ProdutoDTO produtoDTO) {
+        
+        Produto produto
+
+        Produto
+
+       
+Produto produto = new Produto();
+        produto.setId(produtoDTO.getId());
+        produto.setNome(produtoDTO.getNome());
+        produto.setPreco(produtoDTO.getPreco());
+        
+        produto.setId(produtoDTO.getId());
+        produto.setNome(produtoDTO.getNome());
+        produto.setPreco(produtoDTO.getPreco());
+       
+
+        produto.setId(produtoDTO.getId());
+        produto.setNome(produtoDTO.getNome());
+        produto.setPreco(produtoDTO.getPreco());
+
+        produto.setId(produtoDTO.getId());
+        produto.setNome(produtoDTO.getNome());
+        produto.setPreco(produtoDTO.get
+
+        produto.setId(produtoDTO.getId());
+        produto.setNome(produtoDTO.getNome());
+        produto.setPreco(produtoDTO
+
+        produto.setId(produtoDTO.getId());
+        produto.setNome(produtoDTO.getNome());
+        produto.setPreco(produto
+
+        produto.setId(produtoDTO.getId());
+        produto.setNome(produtoDTO.getNome());
+        produto.setPreco(prod
+
+        produto.setId(produtoDTO.getId());
+        produto.setNome(produtoDTO.getNome());
+        produto.setPreco
+
+        produto.setId(produtoDTO.getId());
+        produto.setNome(produtoDTO.getNome());
+        produto.set
+
+        produto.setId(produtoDTO.getId());
+        produto.setNome(produtoDTO.getNome());
+        produto
+
+        produto.setId(produtoDTO.getId());
+        produto.setNome(produtoDTO.getNome());
+       
+
+        produto.setId(produtoDTO.getId());
+        produto.setNome(produtoDTO.getNome());
+
+        produto.setId(produtoDTO.getId());
+        produto.setNome(produtoDTO.get
+
+        produto.setId(produtoDTO.getId());
+        produto.setNome(produtoDTO
+
+        produto.setId(produtoDTO.getId());
+        produto.setNome(produto
+
+        produto.setId(produtoDTO.getId());
+        produto.setNome(prod
+
+        produto.setId(produtoDTO.getId());
+        produto.setNome
+
+        produto.setId(produtoDTO.getId());
+        produto.set
+
+        produto.setId(produtoDTO.getId());
+        produto
+
+        produto.setId(produtoDTO.getId());
+       
+
+        produto.setId(produtoDTO.getId());
+
+        produto.setId(produtoDTO.getId
+
+        produto.setId(produtoDTO.get
+
+        produto.setId(produtoDTO
+
+        produto.setId(produto
+
+        produto.setId(prod
+
+        produto.setId
+
+        produto.set
+
+        produto
+
+       
+return produto;
+    }
+}
+
+
+    }
+
+   
+// ProdutoDTO.java
+package com.seuProjeto.dto;
+
+import lombok.Data;
+
+@Data
+public class ProdutoDTO {
+    
+   
+private Long id;
+    
+   
+private String nome;
+    
+   
+private double preco;
+}
+
+// Produto.java
+package com.seuProjeto.model;
+
+import lombok.Data;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+@Data
+public class Produto {
+    
+    @
+@Id
+    
+   
+private Long id;
+    
+   
+private String nome;
+    
+   
+private double preco;
+}
+
+// ProdutoController.java
+package com.seuProjeto.controller;
+
+import com.seuProjeto.dto.ProdutoDTO;
+import com.seuProjeto.mapper.ProdutoMapper;
+import com.seuProjeto.model.Produto;
+import com.seuProjeto.service.ProdutoService;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/produtos")
+public class ProdutoController {
+
+    
+
+   
+
+
+private final ProdutoService produtoService;
+    
+   
+private final ProdutoMapper produtoMapper;
+
+    
+
+public ProdutoController(ProdutoService produtoService, ProdutoMapper produtoMapper) {
+        
+        t
+
+     
+
+ 
+this.produtoService = produtoService;
+        this.produtoMapper = produtoMapper;
+    }
+
+    
+    }
+
+   
+
+    }
+
+
+   
+@PostMapping
+    
+   
+public ResponseEntity<ProdutoDTO> criarProduto(@RequestBody ProdutoDTO produtoDTO) {
+        
+        Produto produto
+
+        Produto
+
+       
+Produto produto = produtoMapper.toModel(produtoDTO);
+        
+        Produto produtoSalvo
+
+        Produto produtoSal
+
+        Produto produto
+
+        Produto
+
+       
+Produto produtoSalvo = produtoService.salvarProduto(produto);
+        
+        ProdutoDTO dtoResposta
+
+        ProdutoDTO dto
+
+        ProdutoDTO
+
+        Produto
+
+       
+ProdutoDTO dtoResposta = produtoMapper.toDto(produtoSalvo);
+        
+       
+return ResponseEntity.ok(dtoResposta);
+    }
+
+    
+    }
+
+    @
+
+    }
+
+   
+
+    }
+
+
+   
+@GetMapping("/{id}")
+    
+   
+public ResponseEntity<ProdutoDTO> buscarProduto(@PathVariable Long id) {
+        
+        Produto
+
+       
+Produto produto = produtoService.buscarPorId(id);
+        
+        ProdutoDTO produtoDTO
+
+        ProdutoDTO produto
+
+        ProdutoDTO
+
+        Produto
+ProdutoDTO produtoDTO = produtoMapper.toDto(produto);
+        
+       
+return ResponseEntity.ok(produtoDTO);
+    }
+}
+
+
+    }
+
+   
+// ProdutoService.java (Exemplo)
+package com.seuProjeto.service;
+
+import com.seuProjeto.model.Produto;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ProdutoService {
+
+    
+
+   
+
+
+public Produto salvarProduto(Produto produto) {
+        
+       
+// lógica para salvar o produto (por exemplo, usando um repositório)
+        
+       
+return produto; // retorna o produto salvo (simulação)
+    }
+
+    
+    }
+
+   
+
+    }
+
+
+   
+public Produto buscarPorId(Long id) {
+        
+       
+// lógica para buscar produto por ID (simulação)
+        
+        Produto produto
+
+        Produto
+
+       
+Produto produto = new Produto();
+        produto.setId(id);
+        produto.setNome(
+        produto.setId(id);
+        produto.setNome
+
+        produto.setId(id);
+        produto.set
+
+        produto.setId(id);
+        produto
+
+        produto.setId(id);
+       
+
+        produto.setId(id);
+
+        produto.setId(id
+
+        produto.setId
+
+        produto.set
+
+        produto
+
+       
+"Produto Exemplo");
+        produto.setPreco(
+        produto.setPreco
+
+        produto.set
+
+        produto
+
+       
+100.0);
+        
+       
+return produto;
+    }
+}
+
+    }
+}
+``
+
+    }
+}
+
+    }
